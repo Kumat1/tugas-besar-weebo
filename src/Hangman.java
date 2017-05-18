@@ -9,7 +9,9 @@ public class Hangman extends JFrame {
     public Hangman() {
         this.setTitle("Hangman");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(500, 500);
+        this.setSize(600, 600);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
         this.setLayout(null);
 
         ImageIcon img = new ImageIcon("img/logo.png");
@@ -32,11 +34,11 @@ public class Hangman extends JFrame {
         combo.addItem("Animal");
         combo.addItem("Buildings");
         combo.addItem("Countries");
-        combo.setBounds(180, 290, 100, 25);
+        combo.setBounds(220, 400, 150, 35);
         this.add(combo);
 
         JButton button = new JButton("Start");
-        button.setBounds(180, 330, 100, 25);
+        button.setBounds(220, 450, 150, 35);
         this.add(button);
 
         this.setVisible(true);
